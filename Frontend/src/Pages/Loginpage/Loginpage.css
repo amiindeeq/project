@@ -1,0 +1,175 @@
+.l-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F3F3F3;
+  height: 100vh;
+}
+
+form {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  height: 80vh;
+  /* flex-direction: column; */
+}
+
+.l-info {
+  border: 0.25px solid rgb(206, 206, 206);
+  border-radius: 10px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo h2 {
+  font-size: 22px;
+  color: #039cbc;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detials p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: black;
+}
+label {
+  color: #076476;
+}
+
+.email1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
+
+.email1 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  outline: none;
+  color: #076476;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.email1 span {
+  position: absolute;
+  left: 10;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #076476;
+  text-transform: none;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.5s;
+}
+
+input:valid ~ span,
+input:focus ~ span {
+  color: red;
+  transform: translateX(10px) translateY(-7px);
+}
+
+.l-buttons {
+  width: 74%;
+  margin-left: 14%;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.l-buttons #btn1 {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  text-transform: none;
+  border: 2px solid #1a1a1a;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px 5px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: #1a1a1a;
+  z-index: 1;
+  overflow: hidden;
+  transition: 1s;
+}
+.l-buttons #btn2 {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+  text-transform: none;
+  border: 2px solid #1a1a1a;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5px 5px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 10px;
+  color: #1a1a1a;
+  z-index: 1;
+  overflow: hidden;
+  transition: 1s;
+}
+#btn2:hover {
+  color: #fff;
+}
+.l-buttons #btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background-color: #1a1a1a;
+  transform: skewx(35deg);
+  z-index: -1;
+  transition: 1s;
+}
+#btn1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transform: skewx(35deg);
+  z-index: -1;
+  transition: 1s;
+}
+#btn1:hover {
+  color: #1a1a1a;
+}
+#btn1:hover:before {
+  width: 75%;
+}
+#btn2:hover:before {
+  width: 75%;
+}

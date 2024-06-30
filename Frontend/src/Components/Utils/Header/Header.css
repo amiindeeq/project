@@ -1,0 +1,371 @@
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: transparent;
+  border-bottom: 0.25px solid ;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.links a {
+  position: relative;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.5s;
+  padding: 5px 10px;
+  color: #076476;
+  /* border: 1px solid #076476; */
+}
+.links a:hover {
+  letter-spacing: 0.25em;
+  color: #039cbc;
+  box-shadow: 0 0 25px #039cbc;
+}
+/* .links a::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  color: white;
+}
+.links a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.links a i::before {
+  content: "";
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 10px;
+  height: 6px;
+  border: 2px solid #039cbc;
+  background-color: #039cbc;
+  transform: translateX(-50%);
+  transition: 0.5s;
+} */
+.links a:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+/*
+.links a i::after {
+  content: "";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 6px;
+  border: 2px solid #039cbc;
+  background-color: #039cbc;
+  transform: translateX(-50%);
+  transition: 0.5s;
+} */
+.links a:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+.lines hr {
+  height: 5vh;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+  color: gray;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  /* gap: 8px; */
+  align-items: center;
+}
+.logo h3 {
+  left: -30px;
+  font-size: 20px;
+  color: #076476;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.logo h3:hover {
+  color: #039cbc;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 20px ;
+  z-index: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #076476;
+  border-radius: 100%;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans' , sans-serif;
+  font-size: 25px;
+  color: #076476;
+  transition: 0.5s;
+ 
+} 
+.letter:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: #076476;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 100%;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans' , sans-serif;
+  font-size: 25px;
+  color: white;
+ 
+} 
+.letter h3 {
+  text-align: center;
+}
+.icon svg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background-color: #076476;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  transition: 0.5s;
+  left: -20%;
+
+}
+ .icon svg:hover {
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 8px;
+  font-weight: 600;
+  color: #076476;
+  transition: 0.5s;
+  left: -20%;
+ }
+
+
+.u-icon {
+  /* position: relative; */
+  top: 20px;
+  right: 30px;
+  font-family:'Josefin Sans' , sans-serif ;
+}
+
+
+.u-icon .menu {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    padding: 10px 20px;
+    background: whitesmoke;
+    width: 200px;
+    box-sizing: 0px 5px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+ .menu.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+.u-icon .menu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 45px;
+  width: 20px;
+  height: 20px;
+  background-color: whitesmoke;
+  transform: rotate(45deg);
+}
+.u-icon .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.u-icon .menu h3 span {
+  font-size: 14px;
+  color: #c0c0c0;
+  font-weight: 400;
+
+}
+
+.u-icon .menu ul li {
+  list-style: none;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.u-icon .menu ul li i {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.u-icon .menu ul li:hover i {
+  opacity: 1;
+}
+
+.menu h3 {
+  font-family: 'Josefin Sans' , sans-serif;
+}
+
+.u-icon .menu ul li span {
+  font-family: 'Josefin Sans' , sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.u-icon .menu ul li span:hover {
+  color: #039cbc;
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.btnContainer .btn {
+  position: relative;
+  letter-spacing: 0.05em;
+  color: black;
+  border: 1px solid #444;
+  padding: 6px 20px ;
+  cursor: pointer;
+  font-family: 'Josefin Sans' , sans-serif;
+}
+
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:nth-child(1):hover {
+  border-color: #076476;
+  color: #076476;
+  box-shadow: 0 0 0 #076476;
+  animation: box 3s infinite;
+}
+
+
+@keyframes box {
+  0%{
+    box-shadow: #27272c;
+  }
+  50%{
+    box-shadow: 0 0 27px ;
+  }
+  100%{
+    box-shadow: #27272c;
+  }
+}
+
+.btn::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #076476;
+  position: absolute;
+  left: 80%;
+  top: -15%;
+  transform: translate(0% , 15%);
+  transition: left 1s ease;
+}
+
+.btn::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #076476;
+  position: absolute;
+  left: 20%;
+  top: 115%;
+  transform: translate(0% , -115%);
+  transition: left 1s ease;
+}
+
+.btn:nth-child(2)::before{
+  background-color: #039cbc;
+  border-radius: 2px;
+}
+.btn:nth-child(2)::after{
+  background-color: #039cbc;
+  border-radius: 2px;
+}
+
+.btn:hover::before {
+  left: 85%;
+  animation: rotateTop 3s infinite;
+}
+
+.btn:hover::after{
+  left: 15%;
+  animation: rotateBottom 3s infinite;
+}
+.btn:nth-child(1) {
+  border: none;
+}
+.btn:nth-child(2) {
+  border: none;
+}
+@keyframes rotateTop {
+  0%{transform: translate(0% , 15%) rotate(0deg);}
+  25%{transform: translate(0% , 15%) rotate(90deg);}
+  50%{transform: translate(0% , 15%) rotate(180deg);}
+  75%{transform: translate(0% , 15%) rotate(270deg);}
+  100%{transform: translate(0% , 15%) rotate(360deg);}
+}
+@keyframes rotateBottom {
+  0%{transform: translate(0% , -115%) rotate(0deg);}
+  25%{transform: translate(0% , -115%) rotate(-90deg);}
+  50%{transform: translate(0% , -115%) rotate(-180deg);}
+  75%{transform: translate(0% , -115%) rotate(-270deg);}
+  100%{transform: translate(0% , -115%) rotate(-360deg);}
+}

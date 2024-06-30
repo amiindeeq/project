@@ -1,0 +1,84 @@
+.category { 
+    width: 95%;
+}
+
+.category .fe-box {
+    width: 200px;
+    text-align: center;
+    padding: 25px 15px ;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: .5px solid #1a1a1a;
+    border-radius: 20px;
+    margin: 15px 0;
+    background-color: #fff;
+    animation: slideInTop 2s forwards;
+  }
+  .category .fe-box:hover {
+    animation: scaleUp 0.3s forwards;
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes slideInTop {
+    0% {
+      transform: translateY(-40%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+.boxes-content {
+    width: 100%;
+}
+.boxes {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    margin-left: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+.our {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-decoration-line: none;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.category .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+
+}
+
+.category .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+    object-fit: contain;
+
+}
+
+.category .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px ;
+    line-height: 1;
+    border-radius: 4px;
+    color: #1a1a1a;
+    background-color: #e9eaf1;
+}

@@ -1,0 +1,22 @@
+.dash-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: hsl(220, 10%, 99%); */
+    background: hsl(hue, saturation, lightness);
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgb(190, 190, 190);
+   
+}
+
+.outlet {
+    width: 82%;
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

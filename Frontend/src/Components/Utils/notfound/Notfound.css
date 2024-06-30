@@ -1,0 +1,26 @@
+.n-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.n-button button {
+    font-family: 'Josefin Sans' , sans-serif;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 600;
+    background-color: navy;
+    align-items: center;
+}
+
+
+.gg h4 {
+    font-family: 'Josefin Sans' , sans-serif; 
+    color: navy;
+    font-weight: 700;
+    text-align: center;
+}

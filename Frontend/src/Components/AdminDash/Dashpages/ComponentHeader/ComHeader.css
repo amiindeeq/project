@@ -1,0 +1,32 @@
+.trash {
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: #1a1a1a;
+    padding: 8px 8px ;
+    font-size: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px hsl(330, 12%, 97%);
+    transition: 0.5s;
+}
+
+ .trash:hover {
+    color: hsl(330, 12%, 97%);
+}
+
+.com-btn {
+    background: #3661EB;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    transition: .5s ease;
+}
+
+.com-btn:hover {
+    background: white;
+    border: 1px solid ;
+    color: #3661EB;
+}

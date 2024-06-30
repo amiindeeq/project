@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.lan-con {
+  width: 100%;
+  height: 92vh;
+  background-color: #F3F3F3;
+}
+.lan-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+.lan-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background-color: #e9eaf1;
+  border: 5px solid #1a1a1a;
+  border-radius: 50%;
+  
+}
+
+.lan-img img { 
+  margin-top: 20px;
+  border-bottom-left-radius: 43%;
+  border-bottom-right-radius: 43%;
+}
+
+.lan-text {
+  width: 700px;
+  top: -50px;
+  margin-top: 150px;
+
+}
+
+.lan-text h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.lan-text p {
+  width: 420px;
+}
+
+.lan-btn button {
+  background-color: #1a1a1a;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 45px;
+  font-weight: 500;
+  outline: none;
+  transition: .3s ease;
+  
+}
+
+.lan-btn button:hover {
+  background-color: #e9eaf1;
+  color: #1a1a1a;
+  font-family: 'Roboto', sans-serif;
+  border: 2px solid #1a1a1a;
+  border-radius: 45px;
+  font-weight: 700;
+  transform: scale(1.1);
+}
+

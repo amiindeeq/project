@@ -1,0 +1,56 @@
+.or-his {
+  width: 100%;
+}
+
+.table-container {
+  background-color: #f9f9f9;
+}
+
+.table-container .card-header {
+  background-color: #1f2937;
+  color: white;
+}
+
+.table-container .card-body {
+  padding: 1rem;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-container th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #4b5563;
+}
+
+.table-container td img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+}
+
+.table-container .status-paid {
+  background-color: #34d399;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.table-container .status-not-paid {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}

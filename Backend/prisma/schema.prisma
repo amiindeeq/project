@@ -1,0 +1,141 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Roles {
+  Super_Admin
+  Admin
+  User
+}
+
+model User {
+  U_Id       Int        @id @default(autoincrement())
+  Username   String     @unique
+  Phone      String     @unique
+  Email      String     @unique
+  Password   String
+  Is_Admin   Boolean    @default(false)
+  Role       Roles      @default(User)
+  Created_At DateTime   @default(now())
+  Updated_At DateTime   @updatedAt
+  Category   Category[]
+  Product    Product[]
+  Cart       Cart[]
+  Order      Order[]
+  Payment    Payment[]
+  Review     Review?
+}
+
+model Category {
+  Ca_Id      Int       @id @default(autoincrement())
+  Ca_Name    String    @unique
+  Ca_Desc    String
+  Ca_Image   String
+  Author_Id  Int
+  Publish    Boolean   @default(false)
+  Is_Deleted Boolean   @default(false)
+  Created_At DateTime  @default(now())
+  Updated_At DateTime  @updatedAt
+  Product    Product[]
+  User       User      @relation(fields: [Author_Id], references: [U_Id], onDelete: Cascade)
+}
+
+model Product {
+  Pr_Id       Int         @id @default(autoincrement())
+  Pr_Name     String
+  Pr_Desc     String
+  Pr_Price    Float
+  Pr_Quantity Int
+  Pr_Image    String
+  Ca_Id       Int
+  Author_Id   Int
+  Published   Boolean     @default(false)
+  Is_Deleted  Boolean     @default(false)
+  Arrival     Boolean     @default(false)
+  Created_At  DateTime    @default(now())
+  Updated_At  DateTime    @updatedAt
+  Category    Category    @relation(fields: [Ca_Id], references: [Ca_Id], onDelete: Cascade)
+  User        User        @relation(fields: [Author_Id], references: [U_Id], onDelete: Cascade)
+  Cart_Item   Cart_Item[]
+  Review      Review[]
+
+  //  Relation's Part
+}
+
+model Cart {
+  Cr_Id      Int         @id
+  U_Id       Int
+  User       User        @relation(fields: [U_Id], references: [U_Id], onDelete: Cascade)
+  Created_At DateTime    @default(now())
+  Updated_At DateTime    @updatedAt
+  Cart_Item  Cart_Item[]
+}
+
+model Cart_Item {
+  Ct_Id      Int      @id @default(autoincrement())
+  Cr_Id      Int
+  Pr_Id      Int
+  IsDeleted  Boolean  @default(false)
+  Created_At DateTime @default(now())
+  Quant      Int
+  Updated_At DateTime @updatedAt
+  Cart       Cart     @relation(fields: [Cr_Id], references: [Cr_Id], onDelete: Cascade)
+  Product    Product  @relation(fields: [Pr_Id], references: [Pr_Id], onDelete: Cascade)
+}
+
+enum O_Status {
+  Delivered
+  Not_Delivered
+}
+
+model Order {
+  Or_Id      Int       @id @default(autoincrement())
+  Or_Status  O_Status  @default(Not_Delivered)
+  Items      Json[]
+  Or_Total   Float
+  isPaid     Boolean   @default(false)
+  Cr_Id      Int
+  Author_Id  Int
+  Is_Deleted Boolean   @default(false)
+  Created_At DateTime  @default(now())
+  Updated_At DateTime  @updatedAt
+  User       User      @relation(fields: [Author_Id], references: [U_Id])
+  Payment    Payment[]
+}
+
+model Payment {
+  Pa_Id      Int      @id @default(autoincrement())
+  Amount     Float
+  D_Amount   Float
+  S_Total    Float
+  Paid       Float
+  Balance    Float
+  U_Id       Int
+  Or_Id      Int
+  IsDeleted  Boolean  @default(false)
+  Created_At DateTime @default(now())
+  Updated_At DateTime @updatedAt
+  User       User     @relation(fields: [U_Id], references: [U_Id], onDelete: Cascade)
+  Order      Order    @relation(fields: [Or_Id], references: [Or_Id], onDelete: Cascade)
+}
+
+model Review {
+  Rev_Id     Int      @id @default(autoincrement())
+  Rating     Int
+  Comment    String?
+  Author_Id  Int      @unique
+  Pr_Id      Int
+  IsDeleted  Boolean  @default(false)
+  Created_At DateTime @default(now())
+  Updated_At DateTime @updatedAt
+  User       User     @relation(fields: [Author_Id], references: [U_Id])
+  Product    Product  @relation(fields: [Pr_Id], references: [Pr_Id])
+}

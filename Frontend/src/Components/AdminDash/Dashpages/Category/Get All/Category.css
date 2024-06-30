@@ -1,0 +1,125 @@
+.cat-btn {
+  margin-top: 8px ;
+}
+.cat-section {
+  /* display: none; */
+  width: 90%;
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cat-section h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-decoration-line: none;
+  font-weight: 600;
+ 
+}
+
+.cat-section .cat-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.cat-section p {
+  color: gray;
+}
+
+.cat-flex {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  left: -0px;
+  
+}
+
+
+.cat-section .cat {
+  width: 23%;
+  min-width: 230px;
+  padding: 10px 12px ;
+  border: 1px solid #cce7d0;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: .2s ease;
+  margin: 5px 0;
+  position: relative;
+  height: 350px;
+}
+
+.cat-section .cat:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+.cat-section .cat img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #088178;
+}
+
+.cat-section .cat .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.cat-section .cat .des span {
+  color: #606063;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cat-section .cat .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+
+}
+
+.cat-section .cat .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+.cat-section .cat .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.btn-sm {
+  background-color: #088178;
+  width: 100%;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  bottom: -20px;
+  transition: .2s;
+}
+.btn-sm:hover {
+  background-color: #fff;
+  width: 100%;
+  color: #088178;
+  border: 1.5px solid #088178;
+  border-radius: 4px;
+  /* border: none; */
+  bottom: -20px;
+}

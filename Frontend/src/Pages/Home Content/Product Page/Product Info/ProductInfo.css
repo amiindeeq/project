@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.info-all {
+    
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+.quan {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; */
+}
+.quan-btn {
+    font-size: 18px;
+    color: rgb(106, 106, 106);
+}
+.row {
+    display: flex;
+    width: 80%;
+    height: 60vh;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-all {
+  margin-top: 60px;
+}
+
+.name {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.desc {
+    width: 450px;
+    margin-top: 20px;
+    color: rgb(106, 106, 106);
+}
+
+.price {
+    margin-top: 10px;
+    color: red;
+    font-size: 18px;
+}
+
+.star-info {
+    display: flex;
+  }
+  
+  .star {
+   color: rgb(106, 106, 106);
+
+    transition: color 0.3s;
+  }
+  
+  .star:hover {
+    color: yellow;
+  }
+
+  .quantity {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+  }
+  .edit {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #1a1a1a;
+}
+
+  .info-btn {
+    background-color: #1a1a1a;
+    color: #e9eaf1 ;
+    margin-top: 20px;
+    padding: 10px 26px;
+    border-radius: 4px;
+    transition: .2s ease;
+    outline: none;
+  }
+  .info-btn:hover {
+    background-color: #fff;
+    border: 2px solid #1a1a1a;
+    /* transform: scale(1.1); */
+    color: #1a1a1a ;
+    margin-top: 20px;
+    padding: 10px 26px;
+    border-radius: 4px;
+  }
+
+  .im2 {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .im2 img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .im1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+  }

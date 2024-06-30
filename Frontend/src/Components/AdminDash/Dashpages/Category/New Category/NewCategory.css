@@ -1,0 +1,81 @@
+/* .info-p input {
+    width: 60vh;  
+    padding: 15px 10px;
+    outline: none;
+    background-color: hsl(220, 18%, 99%);
+    box-shadow: 2px 2px 4px rgb(190, 190, 190);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.glass-btn {
+    position: relative;
+
+}
+.choose {
+    width: 190px;
+    height: 120px;
+    border: 2px dashed #088178;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose input {
+    width: 100%;
+   
+}
+
+
+.glass-btn button {
+    margin-top: 20px;
+    color: black;
+    padding: .5em 2em;
+    font-size: 1.3em;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-color: none;
+}
+
+.glass-btn button, .glass-btn button::before, .glass-btn button::after {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: .3s;
+}
+
+.glass-btn button::before , .glass-btn button::after {
+    content: '';
+    position: absolute;
+    animation: float 4s infinite;
+}
+
+.glass-btn button::before {
+    left: -0.7em;
+    bottom: -0.7em;
+    width: 1.5em;
+    height: 1.5em;
+    animation-delay: 0.5s;
+}
+
+.glass-btn button::after {
+    right: -0.7em;
+    top: -0.7em;
+    width: 2em;
+    height: 2em;
+}
+
+.glass-btn span {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    width: 4em;
+    height: 4em;
+    background-color: #0814bd;
+    border-radius: 50%;
+    z-index: -1;
+}
+ */

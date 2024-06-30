@@ -1,0 +1,54 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap'); */
+.all {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.all .inputs {
+   display: grid;
+   grid-template-columns: repeat(2 , 1fr);
+}
+
+.inputs input {
+    border: 1px solid rgb(179, 172, 172);
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.inputs h4 {
+    /* color: gray; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.prod-icon {
+    margin-top: 30px;
+
+}
+
+.prod-icon button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 30px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgb(179, 172, 172);
+    transition: .3s ease;
+   color: #1a1a1a;
+   outline: none;
+}
+
+.prod-icon button:hover {
+    outline: none;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.1);
+    align-items: center;
+    gap: 8px;
+    padding: 10px 30px;
+    color: white;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px rgb(179, 172, 172);
+}

@@ -1,0 +1,33 @@
+.textpart h3 {
+  margin-top: 15px;
+  color: #088178;
+}
+.textpart span {
+  color: black;
+  width: 300px;
+}
+
+.cat-tsn2 {
+  margin-top: 15px;
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  outline: none;
+  padding: 0.7rem 2rem;
+  background-color: #088178;
+}
+
+/* New Css */
+
+.catInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-part {
+  width: 50%;
+}
